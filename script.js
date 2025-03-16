@@ -369,7 +369,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
     let careerGrowthCounter = 0;
-    const careerGrowthInterval = 7; // Increase salary and expenses every 7 rounds
+    const careerGrowthInterval = 7; 
 
     function triggerCareerGrowth() {
         careerGrowthCounter++;
@@ -381,7 +381,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function increaseSalary() {
         let salary = parseInt(salaryEl.textContent.replace("$", ""));
-        let salaryIncrease = Math.floor(salary * 0.1); // Increase salary by 10%
+        let salaryIncrease = Math.floor(salary * 0.1); 
         salary += salaryIncrease;
         salaryEl.textContent = `$${salary}`;
         alert(`📈 Your salary has increased by $${salaryIncrease}! New salary: $${salary}`);
@@ -389,7 +389,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function increaseExpenses() {
         let expenses = parseInt(expensesEl.textContent.replace("$", ""));
-        let expensesIncrease = Math.floor(expenses * 0.05); // Increase expenses by 5%
+        let expensesIncrease = Math.floor(expenses * 0.05); 
         expenses += expensesIncrease;
         expensesEl.textContent = `$${expenses}`;
         alert(`📊 Your monthly expenses have increased by $${expensesIncrease}! New expenses: $${expenses}`);
