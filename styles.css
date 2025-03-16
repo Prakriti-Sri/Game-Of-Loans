@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-color: #e6e9f0;
+    --container-bg: #ffffff;
+    --text-color: #09122C;
+    --border-color: #09122C;
+    --button-bg: #007bff;
+    --panel-bg: #f4f4f4;
+}
+
+.dark-mode {
+    --bg-color: #1a1a1a;
+    --container-bg: #2b2b2b;
+    --text-color: #ffffff;
+    --border-color: #ffffff;
+    --button-bg: #ff4757;
+    --panel-bg: #3a3a3a;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.3s ease-in-out;
+}
+
+.container {
+    max-width: 650px;
+    padding: 20px;
+    background: var(--container-bg);
+    border: 5px solid var(--border-color);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-family: 'Big Shoulders Inline', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 26px;
+    color: var(--text-color);
+}
+
+.title-image {
+    height: 50px;
+    width: auto;
+}
+
+.game-panel p {
+    font-size: 18px;
+    font-weight: 500;
+    background: var(--panel-bg);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    margin: 5px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    color: white;
+    font-weight: 600;
+    background: var(--button-bg);
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--button-bg);
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.career-select-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#career-select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+#career-select option {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#career-select option:hover {
+    background-color: #44a4c1;
+}
+
+#career-select option:selected {
+    background-color: #aaa;
+    color: #fff;
+}

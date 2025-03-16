@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Of Loans</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button id="theme-toggle">🌙 Dark Mode</button>
+
+        <h1 class="title"> 
+            <img src="/assests/GoL_logo.png" alt="Games Of Loans Logo" class="title-image">
+            GAME OF LOANS
+        </h1>
+
+        <div class="game-panel">
+            <p id="loan-balance">💳 Loan Balance <span contenteditable="true">$70000</span></p>
+            <p id="salary">💼 Monthly Salary <span contenteditable="true">$3000</span></p>
+            <p id="expenses">🏠 Monthly Expenses <span contenteditable="true">$1500</span></p>
+            <p id="savings">💰 Savings: <span contenteditable="true">$0</span></p>
+        </div>
+
+        <div class="controls">
+            <label for="career-select">🎓 Choose Career:</label>
+            <select id="career-select">
+                <option disabled selected>Select a career</option>
+            </select>
+
+            <button onclick="makePayment()">💵 Make Loan Payment</button>
+            <button onclick="investMoney()">📈 Invest Money</button>
+            <button onclick="getAdvice()">🤖 Get AI Advice</button>
+            <button onclick="earnSideHustle()">💼 Side Hustle (Earn Extra)</button>
+            <button id="financial-dilemma-btn">🎭 Face Financial Dilemma</button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
